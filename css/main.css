@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --light-1: #E8EDF5;
+    --light-2: #B4BECC;
+    --light-3: #717987;
+    --principal: #354250;
+    --dark: #050505;
+    --accent: #FDA900;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--light-1);
+    color: var(--principal);
+    overflow-x: hidden;
+}
+
+.light-1 {
+    color: var(--light-1);
+}
+
+.light-3 {
+    color: var(--light-3);
+}
+
+.bg-principal {
+    background-color: var(--principal);
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.card {
+    border: 0;
+}
+
+.rounded-4 {
+    border-radius: 10px;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+}
+
+.btn-primary {
+    background-color: var(--accent) !important;
+    color: var(--principal) !important;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.btn-secondary {
+    background-color: var(--principal);
+    color: var(--light-2);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark);
+}
+
+.input-group {
+    background-color: var(--light-1);
+    border-radius: .2rem;
+}
+
+.input-group .form-control,
+.input-group .input-group-text {
+    background-color: transparent;
+    border: 0;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+.input-group .input-group-text {
+    color: var(--light-3);
+}
+
+.form-control {
+    color: var(--principal);
+}
+
+
+
+/*********************************************
+NAVBAR - SIDEBAR
+*********************************************/
+#navPrincipal {
+    background-color: var(--dark);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#navPrincipal .nav-link,
+.navbar-toggler {
+    color: var(--light-2);
+}
+
+.navbar-toggler {
+    padding: 6px 15px;
+}
+
+.navbar-toggler:hover {
+    color: var(--accent);
+    background-color: var(--principal);
+}
+
+#navPrincipal .nav-link {
+    font-size: 14px;
+}
+
+#navPrincipal .nav-link:hover,
+#navPrincipal .nav-link.active {
+    color: var(--accent);
+}
+
+#navPrincipal .nav-link.active {
+    font-weight: bold;
+}
+
+#navPrincipal #oneNom {
+    width: 88px;
+}
+
+.nav-link.nav-entrada,
+.nav-link.nav-user,
+.masculino-color span.bg-principal,
+.femenino-color span.bg-principal {
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.nav-link.nav-entrada {
+    background-color: var(--principal);
+}
+
+.nav-link.nav-user {
+    background-color: var(--light-2);
+    color: var(--principal) !important;
+    font-weight: 600;
+}
+
+.nav-link.nav-user:hover {
+    background-color: #fff;
+    color: var(--accent) !important;
+}
+
+.btn-togglerGenerales {
+    padding: 6px 15px;
+    background-color: var(--accent);
+    color: var(--principal);
+}
+
+.btn-togglerGenerales:hover {
+    background-color: var(--principal);
+    color: var(--light-2);
+}
+
+#offcanvasDatosGenerales {
+    width: 250px;
+    border: 0;
+}
+
+
+
+/*********************************************
+INFORMES
+*********************************************/
+#tab-informes {
+    position: sticky;
+    z-index: 10;
+    background-color: var(--light-2);
+    border-radius: .25rem;
+}
+
+.nav-pills .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--principal);
+    font-size: 14px;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #ccc;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--light-1);
+    background-color: var(--light-3);
+    font-weight: bold;
+}
+
+.tab-pane-titulo {
+    font-weight: bold;
+    margin-bottom: 15px;
+    /*    font-size: 24px;*/
+}
+
+.tab-content .card-title {
+    display: flex;
+    align-items: center;
+    color: var(--principal);
+    font-weight: bold;
+}
+
+.tab-content .card-title i {
+    color: var(--light-2);
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.puntualidad-color {
+    background-color: #12B1A3;
+}
+
+.retardo-color {
+    background-color: #CD6B6B;
+}
+
+.temprano-color {
+    background-color: #33B5E5;
+}
+
+.sinRegistro-color {
+    background-color: #607D8B;
+}
+
+.inasistencia-color {
+    background-color: #B4BECC;
+}
+
+.femenino-color {
+    background-color: #FCDCF1;
+}
+
+.masculino-color {
+    background-color: #E8EDF5;
+}
